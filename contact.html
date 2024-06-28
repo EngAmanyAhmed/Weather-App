@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- ! Meta === -->
+    <meta name="description" content="..." />
+    <meta
+      name="keywords"
+      content="webpage, JavaScript, Bootstrap 5, Assignment-11, Weather"
+    />
+    <meta name="author" content="Hassan Essam" />
+    <!-- !=== Google Fonts === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!-- !=== CSS FILES === -->
+
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- !=== Main style Css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Weather</title>
+  </head>
+
+  <body>
+    <!-- &=== Navbar === -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img src="./assets/img/logo.png" alt="Weather logo" class="logo" />
+          <div class="logo-info d-inline-block align-middle">
+            <h1 class="site-title">Weather</h1>
+            <span class="site-description">tagline goes here</span>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse mt-4 my-lg-0"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Photos</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- &=== hero === -->
+    <section class="hero">
+      <div class="container">
+        <form class="find-form position-relative">
+          <input
+            id="findInput"
+            class="form-control w-100"
+            type="text"
+            placeholder="Find your location..."
+          />
+
+          <button id="btnFind" class="btn-find position-absolute" type="button">
+            Find
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <div class="fullwidth-block">
+        <div class="container">
+          <!-- ~=== map === -->
+          <div class="col-md-5">
+            <div class="contact-details">
+              <div
+                class="map"
+                data-latitude="-6.897789"
+                data-longitude="107.621735"
+              ></div>
+              <div class="contact-info">
+                <address>
+                  <img src="images/icon-marker.png" alt="" />
+                  <p>
+                    Company Name INC. <br />
+                    2803 Avenue Street, Los Angeles
+                  </p>
+                </address>
+
+                <a href="#"
+                  ><img src="images/icon-phone.png" alt="" />+1 800 314 235</a
+                >
+                <a href="#"
+                  ><img
+                    src="images/icon-envelope.png"
+                    alt=""
+                  />contact@companyname.com</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- ~=== form === -->
+          <div class="col-md-6 col-md-offset-1">
+            <h2 class="section-title">Contact us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              consectetur inventore ducimus, facilis, numquam id soluta omnis
+              eius recusandae nesciunt vero repellat harum cum. Nisi facilis
+              odit hic, ipsum sed!
+            </p>
+            <form action="#" class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" placeholder="Your name..." />
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="Email Addresss..." />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" placeholder="Company name..." />
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="Website..." />
+                </div>
+              </div>
+              <textarea name="" placeholder="Message..."></textarea>
+              <div class="text-right">
+                <input type="submit" placeholder="Send message" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- &=== Footer === -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row flex-column flex-md-row align-items-center mb-3">
+          <div class="col-lg-8">
+            <form class="subscribe-form position-relative">
+              <input
+                id="subscribeInput"
+                class="form-control w-100"
+                type="text"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button
+                id="btnSubscribe"
+                class="btn-find position-absolute"
+                type="button"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div
+            class="col-lg-3 d-flex justify-content-center ms-lg-auto mt-4 mt-lg-0 pt-2 pt-lg-0"
+          >
+            <div class="social-links">
+              <a href="#" class=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class=""><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#" class=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="fs-5 text-center">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- ^=== JS FILES === -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/index.js"></script>
+
+    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"
+    ></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
